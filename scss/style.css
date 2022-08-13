@@ -1,10 +1,42 @@
-* {
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Lato:wght@100;300;400;700&display=swap");
+*::after, *::before, * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-#header {
-  background-image: url(/images/my-png.png);
-  height: 100vh;
+header {
+  display: flex;
+  justify-content: center;
+}
+header nav {
+  width: 100%;
+  max-width: 1600px;
+}
+header nav .logo {
+  font-family: "Inria Serif", serif;
+  font-size: 4rem;
+  font-weight: 700;
+}
+header nav ul {
+  font-family: Lato, "sans-serif";
+}
+header nav ul li {
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+header nav ul li .spanTag {
+  width: 2.8rem;
+  height: 0.31rem;
+  margin-top: -2px;
+  transition: 0.5s ease-in;
+}
+header nav ul li:hover .spanTag {
+  background: #4ade80;
+}
+
+.first_page_h1_tagline {
+  font-size: 3.2rem;
+  font-family: Lato, "sans-serif";
 }/*# sourceMappingURL=style.css.map */
