@@ -50,8 +50,9 @@ header nav ul li:hover .spanTag {
 }
 
 .waveLine {
-  position: absolute;
-  top: 0rem;
+  background-image: url(/Personal-Portfolio/images/Vector.png);
+  width: 28px;
+  height: 283px;
 }
 
 .bigWave {
