@@ -118,11 +118,11 @@ header nav ul li:hover .spanTag {
 .second_page .second_page_aio .skill_set {
   display: flex;
   justify-content: center;
-  font-family: "" Lato "", "sans-serif";
+  font-family: Lato, "sans-serif";
   font-size: 7rem;
-  font-weight: 900;
+  font-weight: 800;
   color: #00FF85;
-  text-shadow: 4px 0px 3px #003F21;
+  text-shadow: 4px 0px 3px #003f21;
 }
 .second_page .second_page_aio .skill_visuals {
   display: flex;
@@ -143,5 +143,31 @@ header nav ul li:hover .spanTag {
   font-size: 3rem;
   font-weight: 300;
   color: #00FF85;
-  font-family: "" Lato "", "sans-serif";
+  font-family: Lato, "sans-serif";
+}
+
+.about_section {
+  display: flex;
+  margin: 8rem 0;
+  justify-content: center;
+}
+.about_section .inside_about {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: center;
+}
+.about_section .inside_about .heading h1 {
+  color: #030023;
+  font-size: 7rem;
+  z-index: 2;
+}
+.about_section .inside_about .heading h1 .about_span {
+  position: relative;
+  bottom: 42px;
+  z-index: -1;
+  right: 4px;
+  width: 347px;
+  height: 25px;
+  background-color: #00ff85;
 }/*# sourceMappingURL=style.css.map */

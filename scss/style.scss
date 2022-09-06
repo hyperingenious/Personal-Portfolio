@@ -96,31 +96,30 @@ header {
     }
   }
 }
-.second_page{
+.second_page {
   display: flex;
-  margin-top:14rem;
+  margin-top: 14rem;
   justify-content: center;
-  .second_page_aio{
+  .second_page_aio {
     background: $black;
     padding: 3rem;
     width: 100%;
     max-width: 1600px;
-    .skill_set{
+    .skill_set {
       display: flex;
       justify-content: center;
       font-family: $font;
-      font-size: 7rem;
-      font-weight: 900;
+      font-size: $head;
+      font-weight: 800;
       color: $accent;
-      text-shadow: 4px 0px 3px #003F21;
+      text-shadow: 4px 0px 3px #003f21;
     }
-    .skill_visuals{
+    .skill_visuals {
       display: flex;
-      margin-top: 3rem
-      ;
+      margin-top: 3rem;
       flex-direction: column;
       justify-content: center;
-      .skill_box{
+      .skill_box {
         height: 150px;
         border: 2px solid $accent;
         padding: 0 2rem;
@@ -128,11 +127,40 @@ header {
         margin: 1rem 15rem;
         display: flex;
         justify-content: space-between;
-        .skill_name{
+        .skill_name {
           font-size: 3rem;
           font-weight: 300;
           color: $accent;
           font-family: $font;
+        }
+      }
+    }
+  }
+}
+
+// About section
+.about_section {
+  display: flex;
+  margin: $section_margins;
+  justify-content: center;
+  .inside_about {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: center;
+    .heading {
+      h1 {
+        color: $black;
+        font-size: $head;
+        z-index: 2;
+        .about_span {
+          position: relative;
+          bottom: 42px;
+          z-index: -1;
+          right: 4px;
+          width: 347px;
+          height: 25px;
+          background-color: #00ff85;
         }
       }
     }
