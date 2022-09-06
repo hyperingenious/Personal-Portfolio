@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Lato:wght@100;300;400;700&display=swap");
-*::after, *::before, * {
+*::after,
+*::before,
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+::-moz-selection {
+  color: none;
+  background: none;
+}
+
+::selection {
+  color: none;
+  background: none;
 }
 
 header {
@@ -12,50 +25,123 @@ header {
 header nav {
   width: 100%;
   max-width: 1600px;
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 header nav .logo {
   font-family: "Inria Serif", serif;
+  color: #030023;
   font-size: 4rem;
+  padding-left: 2.75rem;
   font-weight: 700;
 }
 header nav ul {
   font-family: Lato, "sans-serif";
+  display: flex;
 }
 header nav ul li {
+  list-style-type: none;
+  padding: 0 2.75rem;
   font-size: 1rem;
+  letter-spacing: 0.3px;
   cursor: pointer;
-  font-weight: 500;
+  font-weight: 600;
+  color: #030023;
 }
 header nav ul li .spanTag {
   width: 2.8rem;
   height: 0.31rem;
   margin-top: -2px;
-  transition: 0.5s ease-in;
+  transition: 0.1s ease-in;
 }
 header nav ul li:hover .spanTag {
   background: #4ade80;
 }
 
-.first_page_h1_tagline {
-  font-size: 3.1rem;
-  font-family: Lato, "sans -serif";
-  font-weight: 500;
+.first_page {
+  display: flex;
+  margin: 8rem 0;
+  justify-content: center;
 }
-
-.first_page_h2_tagline {
-  font-family: Lato, "sans-serif";
-  font-size: 1.1rem;
-  font-weight: 400;
-  letter-spacing: 1px;
+.first_page .first_page_aio {
+  width: 100%;
+  max-width: 1600px;
 }
-
-.waveLine {
-  background-image: url(/Personal-Portfolio/images/Vector.png);
-  width: 28px;
-  height: 283px;
+.first_page .first_page_aio .first_page_text {
+  display: flex;
+  justify-content: center;
 }
-
-.bigWave {
+.first_page .first_page_aio .first_page_text .text_one,
+.first_page .first_page_aio .first_page_text .text_two {
+  margin-right: 18rem;
+  margin-left: 18rem;
+  font-size: 4.5rem;
+  font-family: "Lato", sans-serif;
+  color: #030023;
+}
+.first_page .first_page_aio .first_page_text .text_one .bigSpan,
+.first_page .first_page_aio .first_page_text .text_two .bigSpan {
   position: relative;
-  bottom: -83px;
+  width: 17.375rem;
+  top: -19px;
+  z-index: -1;
+  height: 1rem;
+  background: #00ff85;
+}
+.first_page .first_page_aio .my-image {
+  position: absolute;
+  top: 105px;
+  left: 16rem;
+}
+.first_page .first_page_aio .my-image img {
+  width: 90%;
+  -webkit-user-select: auto;
+     -moz-user-select: auto;
+      -ms-user-select: auto;
+          user-select: auto;
+}
+
+.second_page {
+  display: flex;
+  margin-top: 14rem;
+  justify-content: center;
+}
+.second_page .second_page_aio {
+  background: #030023;
+  padding: 3rem;
+  width: 100%;
+  max-width: 1600px;
+}
+.second_page .second_page_aio .skill_set {
+  display: flex;
+  justify-content: center;
+  font-family: "" Lato "", "sans-serif";
+  font-size: 7rem;
+  font-weight: 900;
+  color: #00FF85;
+  text-shadow: 4px 0px 3px #003F21;
+}
+.second_page .second_page_aio .skill_visuals {
+  display: flex;
+  margin-top: 3rem;
+  flex-direction: column;
+  justify-content: center;
+}
+.second_page .second_page_aio .skill_visuals .skill_box {
+  height: 150px;
+  border: 2px solid #00FF85;
+  padding: 0 2rem;
+  align-items: center;
+  margin: 1rem 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+.second_page .second_page_aio .skill_visuals .skill_box .skill_name {
+  font-size: 3rem;
+  font-weight: 300;
+  color: #00FF85;
+  font-family: "" Lato "", "sans-serif";
 }/*# sourceMappingURL=style.css.map */

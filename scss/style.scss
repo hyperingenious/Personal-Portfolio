@@ -1,56 +1,140 @@
-@import url('https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Lato:wght@100;300;400;700&display=swap');
-*::after,*::before,*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import "mixins", "variables";
+@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Lato:wght@100;300;400;700&display=swap");
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
 }
-header{
-    display: flex;
-    justify-content: center;
-    nav{
-        width: 100%;
-        max-width: 1600px;
-.logo{
-    font-family: 'Inria Serif', serif;
-    font-size: 4rem;
-    font-weight: 700;
+// body {
+//   overflow: hidden;
+// }
+::selection {
+  color: none;
+  background: none;
 }
-ul{
-    font-family:Lato,'sans-serif';
-    li{
-        font-size: 1rem;
-        cursor: pointer;
-        font-weight: 500;
-        .spanTag{
-            width: 2.8rem;
-            height: 0.31rem;
-            margin-top: -2px;
-            transition: 0.5s ease-in;
-        }
-        &:hover .spanTag{
-            background: #4ade80;
-        }
+header {
+  display: flex;
+  justify-content: center;
+  nav {
+    width: 100%;
+    max-width: 1600px;
+    height: 5rem;
+    width: 100%;
+    @include between_center;
+    .logo {
+      font-family: "Inria Serif", serif;
+      color: $black;
+      font-size: 4rem;
+      padding-left: 2.75rem;
+      font-weight: 700;
     }
-}}
+    ul {
+      font-family: Lato, "sans-serif";
+      display: flex;
+      li {
+        list-style-type: none;
+        padding: 0 2.75rem;
+        font-size: 1rem;
+        letter-spacing: 0.3px;
+        cursor: pointer;
+        font-weight: 600;
+        color: $black;
+        .spanTag {
+          width: 2.8rem;
+          height: 0.31rem;
+          margin-top: -2px;
+          transition: 0.1s ease-in;
+        }
+        &:hover .spanTag {
+          background: #4ade80;
+        }
+      }
+    }
+  }
 }
-.first_page_h1_tagline{
-    font-size: 3.1rem;
-    font-family: Lato, 'sans -serif';
-    font-weight:500;
 
+// First Page section
+.first_page {
+  display: flex;
+  margin: $section_margins;
+  justify-content: center;
+  .first_page_aio {
+    width: 100%;
+    // height: 46vh;
+    max-width: 1600px;
+    .first_page_text {
+      display: flex;
+      justify-content: center;
+      .text_one,
+      .text_two {
+        margin-right: 18rem;
+        margin-left: 18rem;
+        font-size: 4.5rem;
+        font-family: "Lato", sans-serif;
+        color: #030023;
+        .bigSpan {
+          position: relative;
+          width: 17.375rem;
+          top: -19px;
+          z-index: -1;
+          height: 1rem;
+          background: #00ff85;
+        }
+      }
+    }
+    .my-image {
+      position: absolute;
+      top: 105px;
+      left: 16rem;
+      img {
+        width: 90%;
+        user-select: auto;
+      }
+    }
+  }
 }
-.first_page_h2_tagline{
-    font-family: Lato, 'sans-serif';
-    font-size:1.1rem;
-    font-weight: 400;
-    letter-spacing: 1px;
-}
-.waveLine{
-    background-image: url(/Personal-Portfolio/images/Vector.png);
-    width: 28px;
-    height: 283px;
-}
-.bigWave{
-    position: relative;
-    bottom: -83px;
+.second_page{
+  display: flex;
+  margin-top:14rem;
+  justify-content: center;
+  .second_page_aio{
+    background: $black;
+    padding: 3rem;
+    width: 100%;
+    max-width: 1600px;
+    .skill_set{
+      display: flex;
+      justify-content: center;
+      font-family: $font;
+      font-size: 7rem;
+      font-weight: 900;
+      color: $accent;
+      text-shadow: 4px 0px 3px #003F21;
+    }
+    .skill_visuals{
+      display: flex;
+      margin-top: 3rem
+      ;
+      flex-direction: column;
+      justify-content: center;
+      .skill_box{
+        height: 150px;
+        border: 2px solid $accent;
+        padding: 0 2rem;
+        align-items: center;
+        margin: 1rem 15rem;
+        display: flex;
+        justify-content: space-between;
+        .skill_name{
+          font-size: 3rem;
+          font-weight: 300;
+          color: $accent;
+          font-family: $font;
+        }
+      }
+    }
+  }
 }
