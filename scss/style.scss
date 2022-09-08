@@ -11,10 +11,10 @@
 // body {
 //   overflow: hidden;
 // }
-::selection {
-  color: none;
-  background: none;
-}
+// ::selection {
+//   color: none;
+//   background: none;
+// }
 header {
   display: flex;
   justify-content: center;
@@ -146,9 +146,9 @@ header {
   .inside_about {
     width: 100%;
     max-width: 1600px;
-    display: flex;
-    justify-content: center;
     .heading {
+      display: flex;
+      justify-content: center;
       h1 {
         color: $black;
         font-size: $head;
@@ -164,5 +164,44 @@ header {
         }
       }
     }
+    .about_blocks {
+      display: flex;
+      margin-top: 3rem;
+      justify-content: center;
+      .block {
+        width: 35%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin: 2rem 6rem;
+        svg {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        h1 {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          color: $black;
+          margin-top: 0.5rem;
+          font-size: 2.8rem;
+          font-weight: 900;
+          font-family: $font;
+        }
+        p {
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          text-align: center;
+          margin-top: 1.3rem;
+          font-size: 1.2rem;
+          letter-spacing: 0.2px;
+          line-height: 25px;
+        }
+      }
+    }
   }
 }
+// Projects section
+

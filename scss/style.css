@@ -8,16 +8,6 @@
   font-family: sans-serif;
 }
 
-::-moz-selection {
-  color: none;
-  background: none;
-}
-
-::selection {
-  color: none;
-  background: none;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -154,6 +144,8 @@ header nav ul li:hover .spanTag {
 .about_section .inside_about {
   width: 100%;
   max-width: 1600px;
+}
+.about_section .inside_about .heading {
   display: flex;
   justify-content: center;
 }
@@ -170,4 +162,41 @@ header nav ul li:hover .spanTag {
   width: 347px;
   height: 25px;
   background-color: #00ff85;
+}
+.about_section .inside_about .about_blocks {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: center;
+}
+.about_section .inside_about .about_blocks .block {
+  width: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 2rem 6rem;
+}
+.about_section .inside_about .about_blocks .block svg {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.about_section .inside_about .about_blocks .block h1 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: #030023;
+  margin-top: 0.5rem;
+  font-size: 2.8rem;
+  font-weight: 900;
+  font-family: Lato, "sans-serif";
+}
+.about_section .inside_about .about_blocks .block p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 1.3rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.2px;
+  line-height: 25px;
 }/*# sourceMappingURL=style.css.map */

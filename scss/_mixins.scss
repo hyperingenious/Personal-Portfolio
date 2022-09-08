@@ -3,3 +3,19 @@
     justify-content: space-between;
     align-items: center;
 }
+
+//imported
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  @mixin outerPadding{
+    padding:0px 70px;
+  }
+  @mixin accentBar($width, $margin){
+    width:$width;
+    height: 6px;
+    margin: $margin 0px;
+    background-color: $accent-color;
+  }
