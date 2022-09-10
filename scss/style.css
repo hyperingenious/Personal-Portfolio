@@ -1,13 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-*::after,
-*::before,
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
-
 header {
   display: flex;
   justify-content: center;
@@ -197,8 +188,42 @@ header nav ul li:hover .spanTag {
   text-align: center;
   margin-top: 1.3rem;
   font-size: 1.2rem;
+  color: rgb(42, 42, 42);
+  font-family: "Lato", "sans-serif";
   letter-spacing: 0.2px;
   line-height: 25px;
+  font-weight: 500;
+}
+
+.emergency_heading_projects_section {
+  display: flex;
+  justify-content: center;
+}
+.emergency_heading_projects_section .emergency_aio {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  padding: 39px 28px;
+  align-items: center;
+  justify-content: center;
+}
+.emergency_heading_projects_section .emergency_aio .heading {
+  display: flex;
+  justify-content: center;
+}
+.emergency_heading_projects_section .emergency_aio .heading h1 {
+  color: #030023;
+  font-size: 7rem;
+  z-index: 2;
+}
+.emergency_heading_projects_section .emergency_aio .heading h1 .about_span {
+  position: relative;
+  bottom: 42px;
+  z-index: -1;
+  right: 4px;
+  width: 460px;
+  height: 25px;
+  background-color: #00ff85;
 }
 
 .head-swiper {
@@ -218,11 +243,20 @@ header nav ul li:hover .spanTag {
   width: 50%;
   padding-left: 5%;
 }
-.head-swiper .ultimate-swiper .latest-blogs h1 {
-  font-size: 8rem;
+.head-swiper .ultimate-swiper .latest-blogs .swiper-head {
+  font-size: 19rem;
   font-family: "Lato", "sans-serif";
   font-weight: 900;
   color: #030023;
+}
+.head-swiper .ultimate-swiper .latest-blogs .swiper-proj {
+  font-size: 5.1rem;
+  top: -3rem;
+  right: -2rem;
+  position: relative;
+  font-family: "Lato", "sans-serif";
+  font-weight: 900;
+  color: #00FF85;
 }
 .head-swiper .ultimate-swiper .swiper {
   width: 312px;
@@ -272,4 +306,23 @@ header nav ul li:hover .spanTag {
 }
 .head-swiper .ultimate-swiper .swiper-slide:nth-child(10n) {
   background: url("https://source.unsplash.com/random/360x480/?BadBoys");
+}
+
+*::after,
+*::before,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+::-moz-selection {
+  color: #00FF85;
+  background-color: #030023;
+}
+
+::selection {
+  color: #00FF85;
+  background-color: #030023;
 }/*# sourceMappingURL=style.css.map */

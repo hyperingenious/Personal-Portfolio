@@ -1,0 +1,43 @@
+// Second page section
+.second_page {
+    display: flex;
+    margin-top: 14rem;
+    justify-content: center;
+    .second_page_aio {
+      background: $black;
+      padding: 3rem;
+      width: 100%;
+      max-width: 1600px;
+      .skill_set {
+        display: flex;
+        justify-content: center;
+        font-family: $font;
+        font-size: $head;
+        font-weight: 800;
+        color: $accent;
+        text-shadow: 4px 0px 3px #003f21;
+      }
+      .skill_visuals {
+        display: flex;
+        margin-top: 3rem;
+        flex-direction: column;
+        justify-content: center;
+        .skill_box {
+          height: 150px;
+          border: 2px solid $accent;
+          padding: 0 2rem;
+          align-items: center;
+          margin: 1rem 15rem;
+          display: flex;
+          justify-content: space-between;
+          .skill_name {
+            font-size: 3rem;
+            font-weight: 300;
+            color: $accent;
+            font-family: $font;
+          }
+        }
+      }
+    }
+  }
+  

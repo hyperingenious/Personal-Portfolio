@@ -1,0 +1,68 @@
+// About section
+.about_section {
+    display: flex;
+    margin: $section_margins;
+    justify-content: center;
+    .inside_about {
+      width: 100%;
+      max-width: 1600px;
+      .heading {
+        display: flex;
+        justify-content: center;
+        h1 {
+          color: $black;
+          font-size: $head;
+          z-index: 2;
+          .about_span {
+            position: relative;
+            bottom: 42px;
+            z-index: -1;
+            right: 4px;
+            width: 347px;
+            height: 25px;
+            background-color: #00ff85;
+          }
+        }
+      }
+      .about_blocks {
+        display: flex;
+        margin-top: 3rem;
+        justify-content: center;
+        .block {
+          width: 35%;
+          display: flex;
+          justify-content: center;
+          flex-direction: column;
+          margin: 2rem 6rem;
+          svg {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+          h1 {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            color: $black;
+            margin-top: 0.5rem;
+            font-size: 2.8rem;
+            font-weight: 900;
+            font-family: $font;
+          }
+          p {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            margin-top: 1.3rem;
+            font-size: 1.2rem;
+            color: rgb(42, 42, 42);
+            font-family: $font;
+            letter-spacing: 0.2px;
+            line-height: 25px;
+            font-weight: 500;
+          }
+        }
+      }
+    }
+  }

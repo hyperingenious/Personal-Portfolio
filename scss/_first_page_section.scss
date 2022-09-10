@@ -1,0 +1,40 @@
+// First Page section
+.first_page {
+    display: flex;
+    margin: $section_margins;
+    justify-content: center;
+    .first_page_aio {
+      width: 100%;
+      // height: 46vh;
+      max-width: 1600px;
+      .first_page_text {
+        display: flex;
+        justify-content: center;
+        .text_one,
+        .text_two {
+          margin-right: 18rem;
+          margin-left: 18rem;
+          font-size: 4.5rem;
+          font-family: "Lato", sans-serif;
+          color: #030023;
+          .bigSpan {
+            position: relative;
+            width: 17.375rem;
+            top: -19px;
+            z-index: -1;
+            height: 1rem;
+            background: #00ff85;
+          }
+        }
+      }
+      .my-image {
+        position: absolute;
+        top: 105px;
+        left: 16rem;
+        img {
+          width: 90%;
+          user-select: auto;
+        }
+      }
+    }
+  }
