@@ -1,5 +1,5 @@
 @import "mixins", "variables";
-@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Lato:wght@100;300;400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 *::after,
 *::before,
 * {
@@ -204,4 +204,91 @@ header {
   }
 }
 // Projects section
+.head-swiper {
+  display: flex;
+  margin: 1rem 1rem;
+  justify-content: center;
+  .ultimate-swiper {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    padding: 39px 28px;
+    align-items: center;
+    justify-content: space-between;
+    .latest-blogs {
+      width: 50%;
+      padding-left: 5%;
+      h1 {
+        font-size: 8rem;
+        font-family: $font;
+        font-weight: 900;
+        color: $black;
+      }
+    }
+    .swiper {
+      width: 240px * 1.3;
+      height: 320px * 1.3;
+      max-width: 240px * 1.3;
+      max-height: 320px * 1.3;
+    }
+
+    .swiper-slide {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 50px;
+      font-weight: 800;
+      font-family: $font;
+      color: rgb(235, 235, 235);
+      box-shadow: $accent_shadow;
+      border-radius: 18px;
+     
+    }
+
+    .swiper-slide:nth-child(1n) {
+      background: url("https://source.unsplash.com/random/360x480/?cryptocurrency,finance");
+    }
+
+    .swiper-slide:nth-child(2n) {
+      background: url("https://source.unsplash.com/random/360x480/?stockmarket,shares");
+      fill-opacity: 1;
+    }
+
+    .swiper-slide:nth-child(3n) {
+      background: url("https://source.unsplash.com/random/360x480/?love");
+    }
+
+    .swiper-slide:nth-child(4n) {
+      background: url("https://source.unsplash.com/random/360x480/?india");
+    }
+
+    .swiper-slide:nth-child(5n) {
+      background: url("https://source.unsplash.com/random/360x480/?diwali");
+    }
+
+    .swiper-slide:nth-child(6n) {
+      background: url("https://source.unsplash.com/random/360x480/?dance");
+    }
+
+    .swiper-slide:nth-child(7n) {
+      background: url("https://source.unsplash.com/random/360x480/?sadhguru");
+    }
+
+    .swiper-slide:nth-child(8n) {
+      background: url("https://source.unsplash.com/random/360x480/?war");
+      opacity: 0.2;
+    }
+
+    .swiper-slide:nth-child(9n) {
+      background: url("https://source.unsplash.com/random/360x480/?IPL");
+    }
+
+    .swiper-slide:nth-child(10n) {
+      background: url("https://source.unsplash.com/random/360x480/?BadBoys");
+    }
+  }
+}
+
+// Swiper section ends
+
 

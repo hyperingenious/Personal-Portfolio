@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Inria+Serif:wght@300;400;700&family=Lato:wght@100;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 *::after,
 *::before,
 * {
@@ -108,7 +108,7 @@ header nav ul li:hover .spanTag {
 .second_page .second_page_aio .skill_set {
   display: flex;
   justify-content: center;
-  font-family: Lato, "sans-serif";
+  font-family: "Lato", "sans-serif";
   font-size: 7rem;
   font-weight: 800;
   color: #00FF85;
@@ -133,7 +133,7 @@ header nav ul li:hover .spanTag {
   font-size: 3rem;
   font-weight: 300;
   color: #00FF85;
-  font-family: Lato, "sans-serif";
+  font-family: "Lato", "sans-serif";
 }
 
 .about_section {
@@ -188,7 +188,7 @@ header nav ul li:hover .spanTag {
   margin-top: 0.5rem;
   font-size: 2.8rem;
   font-weight: 900;
-  font-family: Lato, "sans-serif";
+  font-family: "Lato", "sans-serif";
 }
 .about_section .inside_about .about_blocks .block p {
   width: 100%;
@@ -199,4 +199,77 @@ header nav ul li:hover .spanTag {
   font-size: 1.2rem;
   letter-spacing: 0.2px;
   line-height: 25px;
+}
+
+.head-swiper {
+  display: flex;
+  margin: 1rem 1rem;
+  justify-content: center;
+}
+.head-swiper .ultimate-swiper {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  padding: 39px 28px;
+  align-items: center;
+  justify-content: space-between;
+}
+.head-swiper .ultimate-swiper .latest-blogs {
+  width: 50%;
+  padding-left: 5%;
+}
+.head-swiper .ultimate-swiper .latest-blogs h1 {
+  font-size: 8rem;
+  font-family: "Lato", "sans-serif";
+  font-weight: 900;
+  color: #030023;
+}
+.head-swiper .ultimate-swiper .swiper {
+  width: 312px;
+  height: 416px;
+  max-width: 312px;
+  max-height: 416px;
+}
+.head-swiper .ultimate-swiper .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 800;
+  font-family: "Lato", "sans-serif";
+  color: rgb(235, 235, 235);
+  box-shadow: rgba(0, 255, 133, 0.3294117647) 0px 0px 101px -29px;
+  border-radius: 18px;
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(1n) {
+  background: url("https://source.unsplash.com/random/360x480/?cryptocurrency,finance");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(2n) {
+  background: url("https://source.unsplash.com/random/360x480/?stockmarket,shares");
+  fill-opacity: 1;
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(3n) {
+  background: url("https://source.unsplash.com/random/360x480/?love");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(4n) {
+  background: url("https://source.unsplash.com/random/360x480/?india");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(5n) {
+  background: url("https://source.unsplash.com/random/360x480/?diwali");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(6n) {
+  background: url("https://source.unsplash.com/random/360x480/?dance");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(7n) {
+  background: url("https://source.unsplash.com/random/360x480/?sadhguru");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(8n) {
+  background: url("https://source.unsplash.com/random/360x480/?war");
+  opacity: 0.2;
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(9n) {
+  background: url("https://source.unsplash.com/random/360x480/?IPL");
+}
+.head-swiper .ultimate-swiper .swiper-slide:nth-child(10n) {
+  background: url("https://source.unsplash.com/random/360x480/?BadBoys");
 }/*# sourceMappingURL=style.css.map */
