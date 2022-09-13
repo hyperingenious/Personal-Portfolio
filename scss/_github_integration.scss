@@ -1,0 +1,41 @@
+// Github integration
+.github_integration{
+    display: flex;
+    margin: $section_margins;
+    justify-content: center;
+    .git_integration_aio{
+        width: 100%;
+        max-width: 1600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .heading {
+            display: flex;
+            justify-content: center;
+            h1 {
+              color: $black;
+              font-size: $head;
+              z-index: 2;
+              .about_span {
+                position: relative;
+                bottom: 42px;
+                z-index: -1;
+                right: 4pdx;
+                width: 380px;
+                height: 25px;
+                background-color: #00ff85;
+              }
+            }
+          }
+          .image{
+            margin: 39px * 2 0;
+            img{
+                border-radius: 20px;
+                box-shadow:$dark_shadow;
+                width:900px;
+
+            }
+          }
+    }
+}

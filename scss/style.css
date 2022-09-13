@@ -308,6 +308,46 @@ header nav ul li:hover .spanTag {
   background: url("https://source.unsplash.com/random/360x480/?BadBoys");
 }
 
+.github_integration {
+  display: flex;
+  margin: 8rem 0;
+  justify-content: center;
+}
+.github_integration .git_integration_aio {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.github_integration .git_integration_aio .heading {
+  display: flex;
+  justify-content: center;
+}
+.github_integration .git_integration_aio .heading h1 {
+  color: #030023;
+  font-size: 7rem;
+  z-index: 2;
+}
+.github_integration .git_integration_aio .heading h1 .about_span {
+  position: relative;
+  bottom: 42px;
+  z-index: -1;
+  right: 4px;
+  width: 380px;
+  height: 25px;
+  background-color: #00ff85;
+}
+.github_integration .git_integration_aio .image {
+  margin: 78px 0;
+}
+.github_integration .git_integration_aio .image img {
+  border-radius: 20px;
+  box-shadow: #030023 0px 0px 15px -1px;
+  width: 900px;
+}
+
 *::after,
 *::before,
 * {
