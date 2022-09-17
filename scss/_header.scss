@@ -23,8 +23,12 @@ header {
           font-size: 1rem;
           letter-spacing: 0.3px;
           cursor: pointer;
-          font-weight: 600;
           color: $black;
+          a{
+            font-weight: 600;
+            text-decoration: none;
+            color: $black;
+          }
           .spanTag {
             width: 2.8rem;
             height: 0.31rem;

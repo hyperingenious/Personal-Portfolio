@@ -29,7 +29,11 @@ header nav ul li {
   font-size: 1rem;
   letter-spacing: 0.3px;
   cursor: pointer;
+  color: #030023;
+}
+header nav ul li a {
   font-weight: 600;
+  text-decoration: none;
   color: #030023;
 }
 header nav ul li .spanTag {
@@ -275,38 +279,6 @@ header nav ul li:hover .spanTag {
   box-shadow: rgba(0, 255, 133, 0.3294117647) 0px 0px 101px -29px;
   border-radius: 18px;
 }
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(1n) {
-  background: url("https://source.unsplash.com/random/360x480/?cryptocurrency,finance");
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(2n) {
-  background: url("https://source.unsplash.com/random/360x480/?stockmarket,shares");
-  fill-opacity: 1;
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(3n) {
-  background: url("https://source.unsplash.com/random/360x480/?love");
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(4n) {
-  background: url("https://source.unsplash.com/random/360x480/?india");
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(5n) {
-  background: url("https://source.unsplash.com/random/360x480/?diwali");
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(6n) {
-  background: url("https://source.unsplash.com/random/360x480/?dance");
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(7n) {
-  background: url("https://source.unsplash.com/random/360x480/?sadhguru");
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(8n) {
-  background: url("https://source.unsplash.com/random/360x480/?war");
-  opacity: 0.2;
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(9n) {
-  background: url("https://source.unsplash.com/random/360x480/?IPL");
-}
-.head-swiper .ultimate-swiper .swiper-slide:nth-child(10n) {
-  background: url("https://source.unsplash.com/random/360x480/?BadBoys");
-}
 
 .github_integration {
   display: flex;
@@ -334,7 +306,7 @@ header nav ul li:hover .spanTag {
   position: relative;
   bottom: 42px;
   z-index: -1;
-  right: 4px;
+  right: 4pdx;
   width: 380px;
   height: 25px;
   background-color: #00ff85;
@@ -346,6 +318,47 @@ header nav ul li:hover .spanTag {
   border-radius: 20px;
   box-shadow: #030023 0px 0px 15px -1px;
   width: 900px;
+}
+
+.contact {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact_aio {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+}
+.contact .contact_aio .heading {
+  display: flex;
+  justify-content: center;
+}
+.contact .contact_aio .heading h1 {
+  color: #030023;
+  font-size: 7rem;
+  z-index: 2;
+}
+.contact .contact_aio .heading h1 .about_span {
+  position: relative;
+  bottom: 42px;
+  z-index: -1;
+  right: 4px;
+  width: 460px;
+  height: 25px;
+  background-color: #00ff85;
+}
+.contact .contact_aio .contact_images {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 3rem 3rem;
+}
+.contact .contact_aio .contact_images .mail img {
+  width: 200px;
+  height: 200px;
+  border-radius: 2837px;
 }
 
 *::after,
@@ -365,4 +378,12 @@ header nav ul li:hover .spanTag {
 ::selection {
   color: #00FF85;
   background-color: #030023;
+}
+
+.preRgb {
+  cursor: pointer;
+}
+
+html {
+  scroll-behavior: smooth;
 }/*# sourceMappingURL=style.css.map */

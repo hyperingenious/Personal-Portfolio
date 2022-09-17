@@ -1,0 +1,43 @@
+.contact {
+  display: flex;
+  justify-content: center;
+  .contact_aio {
+    width: 100%;
+    max-width: 1600px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    .heading {
+        display: flex;
+        justify-content: center;
+        h1 {
+          color: $black;
+          font-size: $head;
+          z-index: 2;
+          .about_span {
+            position: relative;
+            bottom: 42px;
+            z-index: -1;
+            right: 4px;
+            width: 460px;
+            height: 25px;
+            background-color: #00ff85;
+          }
+        }
+      }
+    // align-items: center;
+.contact_images{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 3rem 3rem;
+    .mail {
+      img {
+        width: 200px;
+        height: 200px;
+        border-radius: 2837px;
+      }
+    }
+}
+  }
+}
